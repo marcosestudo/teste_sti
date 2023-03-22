@@ -3,17 +3,24 @@ import exercicio_2_fatorial as fatorial
 import exercicio_3_fila as fila
 import exercicio_4_busca_em_arquivo as busca
 
-funcao = input("Deseja executar qual função?\n(1) ordenação\n(2) fatorial não-recursivo\n(3) fatorial recursivo\n(4) fila\n(5) busca\nDigite o número da opção e tecle enter: ")
+funcao = -1
 
 while funcao not in ["1", "2", "3", "4", "5"]:
-    funcao = input("\nEscolha uma opçao válida\nDeseja executar qual função?\n(1) ordenação\n(2) fatorial não-recursivo\n(3) fatorial recursivo\n(4) fila\n(5) busca\nDigite o número da opção e tecle enter: ")
+    print("Deseja executar qual função?")
+    print("(1) ordenação")
+    print("(2) fatorial não-recursivo")
+    print("(3) fatorial recursivo")
+    print("(4) fila")
+    print("(5) busca")
+    funcao = input("Digite o número da opção e tecle enter: ")
 
 if funcao == "1":
     print("trabalhando...")
 
 elif funcao == "2" or funcao == "3":
-    # while começando com true para iniciar entrado no loop como se fosse um "do while", python não tem "do while"
-    while True:
+    num = -1
+    # num começando com -1 para iniciar entrado no loop como se fosse um "do while", python não tem "do while"
+    while num < 0:
         try:
             # se não inserir um número inteiro, dá erro e cai no except
             num = int(input("Fatorial de: "))
@@ -24,9 +31,7 @@ elif funcao == "2" or funcao == "3":
             # num recebe -1 pra reentrar no while e pedir um número válido
             num = -1
             print("Digite um número inteiro maior ou igual a 0") 
-        # sendo inserido um número inteiro maior ou igual a 0, sai do loop
-        if num >= 0:
-            break
+
     if funcao == 1:
         print("\nExecutando funcão: fatorial_nao_recursivo\n")
         fat = fatorial.fatorial_nao_recursivo(num)
