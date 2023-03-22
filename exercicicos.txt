@@ -2,6 +2,6 @@ Ordenar uma lista de nomes de alunos usando dois algoritmos de busca;
 
 Construir algoritmo de geração de número fatorial (N!) recursivo e não-recursivo;
 
-Construa um algoritmo para fila com suas quatro operações: inserir,  remover, tamanho e próximo a sair da fila;
+Construa um algoritmo para fila com suas quatro operações: inserir, remover, tamanho e próximo a sair da fila;
 
 Construa algoritmo que conte o número de vezes que uma palavra aparece em um arquivo;

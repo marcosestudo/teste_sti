@@ -3,12 +3,15 @@ import exercicio_2_fatorial as fatorial
 import exercicio_3_fila as fila
 import exercicio_4_busca_em_arquivo as busca
 
-funcao = input("Deseja executar qual função?\n(1) fatorial não-recursivo\n(2) fatorial recursivo\nDigite o número da opção e tecle enter: ")
+funcao = input("Deseja executar qual função?\n(1) ordenação\n(2) fatorial não-recursivo\n(3) fatorial recursivo\n(4) fila\n(5) busca\nDigite o número da opção e tecle enter: ")
 
 while funcao not in ["1", "2", "3", "4", "5"]:
-    funcao = input("\nEscolha uma opçao válida\nDeseja executar qual função?\n(1) fatorial não-recursivo\n(2) fatorial recursivo\nDigite o número da opção e tecle enter: ")
+    funcao = input("\nEscolha uma opçao válida\nDeseja executar qual função?\n(1) ordenação\n(2) fatorial não-recursivo\n(3) fatorial recursivo\n(4) fila\n(5) busca\nDigite o número da opção e tecle enter: ")
 
-if funcao == "1" or funcao == "2":
+if funcao == "1":
+    print("trabalhando...")
+
+elif funcao == "2" or funcao == "3":
     # while começando com true para iniciar entrado no loop como se fosse um "do while", python não tem "do while"
     while True:
         try:
@@ -25,15 +28,12 @@ if funcao == "1" or funcao == "2":
         if num >= 0:
             break
     if funcao == 1:
-        print("\nExecutando funcão: fatorial_nao_recursivo")
+        print("\nExecutando funcão: fatorial_nao_recursivo\n")
         fat = fatorial.fatorial_nao_recursivo(num)
     else:
-        print("\nExecutando funcão: fatorial_recursivo")
+        print("\nExecutando funcão: fatorial_recursivo\n")
         fat = fatorial.fatorial_recursivo(num)
     print(f"O fatorial de {num} é {fat}")    
-
-elif funcao == "3":
-    print("trabalhando...")
 
 elif funcao == "4":
     print("trabalhando...")
