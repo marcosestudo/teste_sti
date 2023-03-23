@@ -1,4 +1,4 @@
-Ordenar uma lista de nomes de alunos usando dois algoritmos de busca;
+Ordenar uma lista de nomes usando dois algoritmos de busca;
 
 Construir algoritmo de geração de número fatorial (N!) recursivo e não-recursivo;
 

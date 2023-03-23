@@ -44,4 +44,4 @@ contaNome("exercicio_4.txt", "lorem")
 
 #     print(f'Solução 2: A palavra {palavra} aparece {texto.count(palavra.lower())} vezes no arquivo')
 
-# contaNome2("exercicio_4.txt", "lorem")
+# contaNome2("exercicio_4.txt", "Lorem")
