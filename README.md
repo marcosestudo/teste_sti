@@ -5,13 +5,13 @@
 ## 1: clone o projeto
 
 ```
-git clone...
+git clone https://github.com/marcosestudo/teste_sti.git
 ```
 
 ## 2: Vá para a pasta:
 
 ```
-cd ...
+cd teste_sti
 ```
 
 ## 3.1: Para rodar os exercícios, utilize os seguintes comandos
@@ -25,7 +25,7 @@ python3 exercicio_2.py
 ```
 
 ```
-python3 exercicio_1_recursivo.py
+python3 exercicio_2_recursivo.py
 ```
 
 ```
@@ -47,7 +47,7 @@ python exercicio_2.py
 ```
 
 ```
-python exercicio_1_recursivo.py
+python exercicio_2_recursivo.py
 ```
 
 ```
