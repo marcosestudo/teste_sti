@@ -35,18 +35,12 @@ def busca_binaria(lista, nome):
 
 
 
-lista = [
-        "Breno Azevedo Souza",
-        "Caua Melo Alves",
-        "Aline Ferreira Barros",
-        "Vitoria Cavalcanti Lima",
-        "Aline Ferreira Barros",
-        "Caua Melo Alves",
-        "Aline Ferreira Barros",
-        "Vitoria Cavalcanti Lima",
-        "Andre Cunha Fernandes",
-        "Andre Cunha Fernandes",
-        "Caua Melo Alves"
-        ]
+# listas pra testes
+
+# lista sem repetições 
+# lista = ["Breno Azevedo Souza", "Caua Melo Alves", "Vitoria Cavalcanti Lima", "Andre Cunha Fernandes", "Aline Ferreira Barros"]
+
+# lista com repetições
+lista = ["Breno Azevedo Souza", "Caua Melo Alves", "Aline Ferreira Barros", "Vitoria Cavalcanti Lima", "Aline Ferreira Barros", "Caua Melo Alves", "Aline Ferreira Barros", "Vitoria Cavalcanti Lima", "Andre Cunha Fernandes", "Andre Cunha Fernandes",  "Caua Melo Alves"]
 
 print(ordena(lista))
