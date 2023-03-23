@@ -12,7 +12,7 @@ class Fila:
             print(f"\nElemento removido: {removido}")
             return removido
         else:
-            print("A fila está vazia")
+            print("\nA fila está vazia")
             return None
 
     def tam(self):
@@ -22,7 +22,7 @@ class Fila:
         if len(self.elementos) > 0:
             print(f"\nO próximo elmento a sair da fila é: {self.elementos[0]}")
         else:
-            print("A fila está vazia")
+            print("\nA fila está vazia")
 
 
 
@@ -45,7 +45,7 @@ def operacoes_fila(fila):
         operacao = input("\nDigite o número da opção e tecle enter: ")
         
         if operacao not in ["1", "2", "3", "4", "5"]:
-            print("Opção inválida")
+            print("\nOpção inválida")
 
         if operacao == "1":
             elem = input("\nDigite o elemento que será inserido na fila e tecle enter: ")
@@ -68,7 +68,7 @@ def operacoes_fila(fila):
         while confirmacao not in ["1", "2"]:
             confirmacao = input("\nDeseja fazer outra operação na fila\n(1) Sim\n(2) Não\nDigite a opção e tecle enter: ")
             if confirmacao not in ["1", "2"]:
-                print("Opção inválida")
+                print("\nOpção inválida")
         
         # se o usuário responder 1, operação recebe -1 para cairmos de volta no loop no início da função
         # se responder 2, o programa é encerrado
