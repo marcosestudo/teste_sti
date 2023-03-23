@@ -26,22 +26,22 @@ def contaNome(arquivo, palavra):
         if palavraListada == palavra:
             contador += 1
 
-    print(f'A palavra {palavra} aparece {contador} vezes no arquivo')
+    print(f'\nA palavra {palavra} aparece {contador} vezes no arquivo')
 
 contaNome("exercicio_4.txt", "lorem")
 
 
-# solução 2
+# solução usando count
 # a função count contabiliza a palavra buscada independentemente dela estar separada por espaços
 # eu preferi fazer da forma acima para desenvolver um pouco melhor o raciocínio da questão
 # descomentando o código abaixo usando a função count, vemos que o resultado das duas funções é o mesmo
 
-# def contaNome2(arquivo, palavra):
+# def contaNomeComCount(arquivo, palavra):
 #     arquivo =  open(arquivo, "r")
 
 #     texto = arquivo.read().lower()
 #     arquivo.close()
 
-#     print(f'Solução 2: A palavra {palavra} aparece {texto.count(palavra.lower())} vezes no arquivo')
+#     print(f'Usando count: A palavra {palavra} aparece {texto.count(palavra.lower())} vezes no arquivo')
 
-# contaNome2("exercicio_4.txt", "Lorem")
+# contaNomeComCount("exercicio_4.txt", "Lorem")
