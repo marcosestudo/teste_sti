@@ -67,11 +67,13 @@ def operacoes_fila(fila):
 
         while confirmacao not in ["1", "2"]:
             confirmacao = input("\nDeseja fazer outra operação na fila\n(1) Sim\n(2) Não\nDigite a opção e tecle enter: ")
-            if confirmacao == "1":
-                # operacao recebendo -1 pra voltar pro loop caso o usuario queira fazer outra operação
-                operacao = -1
-            elif confirmacao == "2":
-                break
+            if confirmacao not in ["1", "2"]:
+                print("Opção inválida")
+                           
+        # se a opção da confirmação for 1, confirmação continua sendo -1 para cair no loop das opções no início do código
+        # se a opção for 2, sai do loop e encerra o programa
+        if confirmacao == "2":
+            break
 
 
 
